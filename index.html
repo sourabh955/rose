@@ -8,6 +8,13 @@
     <link rel="icon" type="img/jpg" href="https://c4.wallpaperflare.com/wallpaper/812/187/770/kimi-no-na-wa-tachibana-taki-miyamizu-mitsuha-anime-wallpaper-preview.jpg">
 
 </head>
+    <script>
+  document.addEventListener('click', () => {
+    const audio = document.querySelector('audio');
+    audio.play();
+  }, { once: true });
+</script>
+
 <body>
   
 <div class="rose">
@@ -48,9 +55,10 @@
 <span id="prompt">Touch the rose, cutie🥰</span>
 
 <div style="display: none;">
-  <audio autoplay="" loop="" controls="">
-    <source src="Song.mp3" type="audio/mp3">
-  </audio>
+  <audio id="bgm" loop>
+      <source src="Song.mp3" type="audio/mp3">
+</audio>
+
 </div>
 
 <h1>-By Your Babygirl🥰</h1>
